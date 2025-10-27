@@ -127,12 +127,12 @@ jobs:
           ls dist/*.tar.gz
 
       - name: Upload source zip file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           path: python/dist/*.tar.gz
 
       - name: Upload Wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           path: python/dist/*.whl
 
@@ -165,7 +165,7 @@ jobs:
 #          OPENBLAS_NUM_THREADS: 2
 #
 #      - name: Store artifacts
-#        uses: actions/upload-artifact@v3
+#        uses: actions/upload-artifact@v5
 #        with:
 #          path: python/dist/*.tar.gz
 
